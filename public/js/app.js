@@ -1,5 +1,3 @@
-console.log('client file javaScribt is loaded ');
-
 fetch('http://puzzle.mead.io/puzzle').then((respo)=>{
     respo.json().then( (data)=> {
             console.log(data);
