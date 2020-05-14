@@ -12,8 +12,8 @@ const forecast = (lat,lon, callback) => {
             callback('Unable to find location', undefined)
         } else {
           
-             callback(undefined, response.body.weather[0].description + ', It is currently ' + (response.body.main.temp - 273.15) + ' degress out. The speed of wind is  ' + 
-             response.body.wind.speed + ' min temp is ' + (response.body.main.temp_min - 273.15) + "and Max temp is " + (response.body.main.temp_max - 273.15) )
+            
+             callback(undefined, response.body.weather[0].description + ', It is currently ' + (response.body.main.temp - 273.15) + ' degree out. the high today is ' + (response.body.main.temp_max - 273.15) + " with low of  " + (response.body.main.temp_max - 273.15) + '. And the speed of wind is ' + response.body.wind.speed)
         }
     })
 }
